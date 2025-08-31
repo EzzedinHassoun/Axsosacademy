@@ -1,0 +1,15 @@
+h1{
+    color: hsl(351, 23%, 28%);
+    font-size: 50px;
+}
+.is-centered {
+    text-align: center;
+}
+.is-red {
+    color: red;
+}
+
+.is-green {
+    color: rgba(255, 0, 221, 0.473);
+}
+

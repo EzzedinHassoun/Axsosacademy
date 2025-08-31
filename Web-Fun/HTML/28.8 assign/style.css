@@ -1,0 +1,25 @@
+/* style for h1 */
+h1 {
+    background-color: black;
+    color: white;
+    text-align: left;
+    font-style: italic;
+    padding: 10px;
+}
+/* "Cloud" word in aqua */
+h1 span {
+    color: aqua;
+}
+/* style for h2 */
+h2 {
+    background-color: lavender;
+    color: white;
+    text-align: center;
+}
+/* style for h3 */
+h3 {
+    background-color: lightcyan;
+    color:teal;
+    text-align: right;
+    text-decoration: underline;
+}
