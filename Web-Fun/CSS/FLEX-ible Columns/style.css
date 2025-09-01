@@ -1,0 +1,32 @@
+.row{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.col{
+    flex: 1;
+    background: lightblue;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #333;
+    border-radius: 6px;
+}
+
+.col-2{
+flex: 2;
+background: lightgreen;
+padding: 20px;
+text-align: center;
+border: 1px solid #333;
+border-radius: 6px;
+}
+
+.col-3{
+    flex: 3;
+    background: lightcoral;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #333;
+    border-radius: 6px;
+}
