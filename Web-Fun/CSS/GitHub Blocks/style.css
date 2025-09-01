@@ -1,0 +1,33 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+h1{
+    margin: 20px 0;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.row1{
+    background-color: #5cc8d0;
+}
+.row2{
+    background-color: #d8aebf;
+}
+.row3{
+    background-color: #f8f8e6;
+}
+.octocat{
+    height: 200px;
+    border: 5px;
+    border-radius: 10px;
+    background: white;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(red, green, blue, alpha);
+}
