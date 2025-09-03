@@ -4,9 +4,12 @@ body{
     background-color: #f9f9f9;
 }
 h1{
-    margin: 20px 0;
+    margin: 10px 0;
 }
-
+ .block{
+    margin: 0px auto;
+    width: 60%;
+ }
 .row{
     display: flex;
     justify-content: center;
