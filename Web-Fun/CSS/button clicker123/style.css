@@ -1,0 +1,88 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    width: 80%;
+}
+
+.head {
+    display: flex;
+    height: 100px;
+    background-color: gray;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.search {
+    height: 50%;
+    width: 30%;
+}
+
+.login {
+    height: 50%;
+    width: 10%;
+    background-color: blue;
+    color: white;
+    border: 5px solid black;
+}
+
+.box1 {
+    display: flex;
+    border: 5px black solid;
+    padding: 30px;
+    justify-content: space-between;
+    
+
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.jabaneese {
+    display: flex;
+
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+
+
+}
+.mainBoxes{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+
+
+}
+
+.sidebar-card {
+    border: 2px solid black;
+    padding: 15px;
+    margin-left: 10%;
+    height: 80%;
+  
+
+}
+.left-boxes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.pp{
+  width: 50%;
+}
+.likes{
+    background-color: yellow;
+    font-weight: bold;
+}
+  
+
+  
