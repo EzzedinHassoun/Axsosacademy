@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dojo Pizzeria</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🍕 Dojo Pizzeria</h1>
+
+    <section class="builder">
+      <h2>Build Your Pizza</h2>
+
+      <label>Crust:
+        <select id="crust">
+          <option>deep dish</option>
+          <option>hand tossed</option>
+          <option>thin crust</option>
+          <option>stuffed crust</option>
+        </select>
+      </label>
+
+      <label>Sauce:
+        <select id="sauce">
+          <option>traditional</option>
+          <option>marinara</option>
+          <option>white garlic</option>
+        </select>
+      </label>
+
+      <label>Cheeses:</label>
+      <div class="checkbox-group" id="cheeses">
+        <label><input type="checkbox" value="mozzarella"> mozzarella</label>
+        <label><input type="checkbox" value="feta"> feta</label>
+        <label><input type="checkbox" value="cheddar"> cheddar</label>
+        <label><input type="checkbox" value="parmesan"> parmesan</label>
+      </div>
+
+      <label>Toppings:</label>
+      <div class="checkbox-group" id="toppings">
+        <label><input type="checkbox" value="pepperoni"> pepperoni</label>
+        <label><input type="checkbox" value="sausage"> sausage</label>
+        <label><input type="checkbox" value="mushrooms"> mushrooms</label>
+        <label><input type="checkbox" value="olives"> olives</label>
+        <label><input type="checkbox" value="onions"> onions</label>
+        <label><input type="checkbox" value="spinach"> spinach</label>
+        <label><input type="checkbox" value="basil"> basil</label>
+        <label><input type="checkbox" value="tomatoes"> tomatoes</label>
+      </div>
+
+      <button onclick="bakePizza()">Bake Pizza</button>
+    </section>
+
+    <section class="preview">
+      <h2>Your Pizza</h2>
+      <img id="pizzaImage" src="Pizza.webp" alt="Pizza" />
+      <pre id="output"></pre>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
