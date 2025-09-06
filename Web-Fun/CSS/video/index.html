@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VideoLab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Top bar -->
+    <header class="topbar">
+        <h1 class="logo">VideoLab</h1>
+        <input type="text" class="search" placeholder="Search">
+        <button id="loginBtn" class="login-btn">Login</button>
+
+    </header>
+
+    <!-- Main content -->
+    <main class="content">
+        <!-- Left section (Main video) -->
+        <section class="main-video">
+            <video id="mainVideo" src="sample.mp4" controls></video>
+            <h2>Example Video Title</h2>
+            <p class="meta">1.3K views | June 18, 2021</p>
+            <button class="subscribe-btn">Subscribe</button>
+            <p class="username">Example User Name</p>
+        </section>
+
+        <!-- Right section (Up Next) -->
+        <aside class="sidebar">
+            <h3>Up Next</h3>
+
+            <div class="video-preview">
+                <div class="preview-container">
+                    <video src="sample.mp4" muted></video>
+                    <span class="play-icon">▶</span>
+                </div>
+                <p>Not a Rick Roll</p>
+            </div>
+
+            <div class="video-preview">
+                <div class="preview-container">
+                    <video src="sample.mp4" muted></video>
+                    <span class="play-icon">▶</span>
+                </div>
+                <p>10 Facts About ET's Cat</p>
+            </div>
+
+            <div class="video-preview">
+                <div class="preview-container">
+                    <video src="sample.mp4" muted></video>
+                    <span class="play-icon">▶</span>
+                </div>
+                <p>5 Cosplay Tips</p>
+            </div>
+
+            <div class="video-preview">
+                <div class="preview-container">
+                    <video src="sample.mp4" muted></video>
+                    <span class="play-icon">▶</span>
+                </div>
+                <p>Boy Battles Dinobot in Thunderdome</p>
+            </div>
+        </aside>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
