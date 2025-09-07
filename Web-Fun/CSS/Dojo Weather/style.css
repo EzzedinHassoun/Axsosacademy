@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f0f0f0;
+}
+
+nav {
+  background: #9fc5f8;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav li {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.forecast {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.day {
+  background: #eeeeee;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  width: 150px;
+}
+
+.day img {
+  width: 80px;
+  height: 80px;
+}
+
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #ffeaa7;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+}
+.temp{
+    text-align: left;
+    justify-content: right;
+}

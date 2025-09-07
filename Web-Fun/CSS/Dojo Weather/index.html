@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DojoWeather</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <h1>DojoWeather</h1>
+    <ul>
+      <li onclick="showAlert()">Burbank</li>
+      <li onclick="showAlert()">Chicago</li>
+      <li onclick="showAlert()">Dallas</li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="top-bar">
+      <h2>San Jose</h2>
+      <div class="temp"> Show temperature in</div>
+      <select id="unit" onchange="convertTemps(this)">
+        <option value="c">°Celsius</option>
+        <option value="f">°Fahrenheit</option>
+      </select>
+    </div>
+
+    <div class="forecast">
+      <div class="day">
+        <h3>Today</h3>
+        <img src="some_rain.png" alt="Rain" />
+        <p>some rain</p>
+        <p class="temp"><span class="high">24</span>° / <span class="low">18</span>°</p>
+      </div>
+      <div class="day">
+        <h3>Tomorrow</h3>
+        <img src="some_sun.png" alt="Sun" />
+        <p>sunny</p>
+        <p class="temp"><span class="high">27</span>° / <span class="low">19</span>°</p>
+      </div>
+      <div class="day">
+        <h3>Friday</h3>
+        <img src="some_clouds.png" alt="Clouds" />
+        <p>cloudy</p>
+        <p class="temp"><span class="high">21</span>° / <span class="low">16</span>°</p>
+      </div>
+      <div class="day">
+        <h3>Saturday</h3>
+        <img src="some_sun.png" alt="Sun" />
+        <p>sunny</p>
+        <p class="temp"><span class="high">26</span>° / <span class="low">21</span>°</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="cookie-banner" id="cookie">
+    <p><strong>Stop! Cookie time</strong><br>
+    We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic.</p>
+    <button onclick="acceptCookies()">I Accept</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
