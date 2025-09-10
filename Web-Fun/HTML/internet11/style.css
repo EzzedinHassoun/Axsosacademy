@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #fff;
+  color: #333;
+}
+
+.header .title {
+  text-align: left;
+  margin: 2%;
+  margin-bottom: 0%;
+  width: 80%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 0px;
+
+
+}
+
+.nav {
+  background-color: #477cab;
+
+}
+
+.text {
+  font-size: 50px;
+  color: black;
+  margin-left: 10px
+}
+
+#logo {
+  width: 80px;
+
+}
+
+.net {
+  color: #ff7f50;
+}
+
+#text {
+  color: black;
+}
+
+.header {
+  background: linear-gradient(#1e5799, #2989d8);
+  color: white;
+  padding: 1rem;
+  margin: 6% auto;
+
+}
+
+.header .logo {
+  width: 60px;
+  margin-right: 1rem;
+}
+
+.header .title h1 {
+  font-size: 1.8rem;
+}
+
+.header .title p {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.header .contact {
+  text-align: right;
+}
+
+.container {
+  display: flex;
+  margin: 1rem;
+}
+
+.contact {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.address {
+  text-align: center;
+}
+
+.number {
+  color: green;
+}
+
+.img {
+  width: 60px;
+}
+
+.home {
+  width: 50px;
+
+}
+
+.house {
+  text-align: left;
+  color: #2989d8;
+
+}
+
+.sidebar {
+  width: 20%;
+  padding: 1rem;
+}
+
+.sidebar1 {
+  background-image: url(ad_background.png);
+
+}
+
+
+.content {
+  width: 75%;
+  padding: 1rem;
+  text-align: left;
+
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn.purple {
+  background: #6a5acd;
+}
+
+.btn.orange {
+  background: #ff7f50;
+}
+
+.ad {
+  margin-top: 1rem;
+  width: 100%;
+}
+.main{
+  display: flex;
+  justify-content: space-between;
+}
+
+.diagram {
+  display: block;
+  margin: 1rem auto;
+  max-width: 300px;
+  width: 150px;
+}
+
+.highlight {
+  border: 2px solid #00aaff;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 5px;
+  background: #f9f9f9;
+  text-align: center;
+  display: flex;
+}
