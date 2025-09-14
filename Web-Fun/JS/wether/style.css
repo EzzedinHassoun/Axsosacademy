@@ -1,0 +1,120 @@
+
+.navbar {
+    background-color: rgb(160, 171, 255);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    
+
+}
+
+.list {
+    display: flex;
+    padding-left: 70px;
+}
+
+.navbar h1{ 
+    padding-right: 50px;
+
+
+}
+
+.list li {
+    padding: 20px;
+    font-size: 20px;
+    list-style-type: none;
+    
+}
+
+
+.temp{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.temp data{
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+}
+
+.selector{
+    width: 20%;
+    height: 35px;
+}
+
+
+
+
+hr{
+    width: 900px;
+    height: 1px;
+    background-color: black;
+}
+
+
+.container{
+display: flex;
+justify-content: center;
+
+}
+
+
+.daily{
+    width: 15%;
+    background-color: rgb(246, 241, 241);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+}
+
+.daily img{
+    width: 50%;
+    border-radius: 50%;
+}
+
+.daily p{
+    font-size: large;
+}
+
+
+.temp of day{
+    display: flex;
+}
+
+.high{
+    color: red;
+    margin-right: 20px;
+}
+
+.low{
+    color: blue;
+}
+
+
+.cookie{
+    background-color: rgb(246, 241, 241);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+    position: fixed;
+    bottom: 30px;
+    left: 300px;
+}
+
+.cookie img{
+    width: 15%;
+
+}
+
+.cookie button{
+    background-color: aqua;
+    width: 100px;
+    height: 50px;
+}
