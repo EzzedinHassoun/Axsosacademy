@@ -1,0 +1,14 @@
+-- CRUD (Create, Read, Update, Delete)
+
+-- Create 
+insert into users (name, email) values ('Ezz', 'ezz.hassoun@example.com');
+
+-- Read 
+select * from users;
+select name, email from users where id = 1;
+
+-- Update 
+update users set email = 'izz.hassoun@example.com' where id = 1;
+
+-- delete 
+delete from users where id = 1;
