@@ -1,0 +1,65 @@
+class User:
+    def __init__(self,name,balance=0):
+
+        self.name=name
+
+        self.balance=balance
+
+    def make_deposit(self,amount):
+
+        self.balance+=amount
+        return self
+    
+    def make_withdraw(self,amount):
+
+        self.balance-=amount
+        return self
+    
+    def display_userBalance(self):
+
+        print(f"User:{self.name},Balance:${self.balance}")
+        return self
+    
+    def transfer_money(self,other_user,amount):
+        
+        self.make_withdraw(amount)
+        other_user.make_deposit(amount)
+
+        print(f"{self.name} transfered ${amount} to {other_user.name}")
+        return self
+    
+user1=User("Ezzedin")
+user2=User("Mahmoud")
+user3=User("Hassoun")
+
+# When First user make 3 deposite and 1 withdraw
+user1.make_deposit(200)
+
+user1.make_deposit(300)
+
+user1.make_deposit(50)
+
+user1.make_withdraw(55)
+user1.display_userBalance()
+
+# When Second user make 2 deposite and 2 withdraw
+user2.make_deposit(200)
+user2.make_deposit(150)
+
+user2.make_withdraw(100)
+user2.make_withdraw(50)
+
+user2.display_userBalance()
+
+# When Third user make1 deposite and 3 withdraw
+user3.make_deposit(500)
+
+user3.make_withdraw(200)
+user3.make_withdraw(50)
+user3.make_withdraw(55)
+user3.display_userBalance()
+
+# Transfer money from user1 to user3
+user1.transfer_money(user3,55)
+user1.display_userBalance()
+user3.display_userBalance()
