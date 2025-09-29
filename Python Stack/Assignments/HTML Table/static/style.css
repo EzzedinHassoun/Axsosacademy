@@ -1,0 +1,34 @@
+body {
+    text-align: center;
+    font-size: 40px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    width: 1500px;
+    height: 80px;
+    margin: 60px auto;
+    cursor: pointer;
+}
+
+table {
+    width: 50%;
+    margin: 0 auto;
+    color: black;
+}
+
+th {
+    color: white;
+    background-color: rgb(72, 156, 156);
+}
+
+td {
+    background-color: rgb(190, 186, 186);
+}
+
+td:hover {
+    background-color: rgb(72, 156, 156);
+    color: white;
+}
