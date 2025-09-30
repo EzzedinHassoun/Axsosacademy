@@ -14,12 +14,12 @@ def Champion():
 def Hi(name):
     return "Hi Flask!"
 
-@app.route("/say/Michael")
-def go(name):
-    return "Hi Michael!"
+@app.route("/say/Michael/")
+def go(x=4):
+    return "Hi Michael!"+x
 
 @app.route("/say/John")
-def up(name):
+def up(sayjohn):
     return "Hi John!"
 
 @app.route ("/repeat/<int:num>/<word>")

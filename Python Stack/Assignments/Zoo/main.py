@@ -110,7 +110,7 @@ class Tiger(Animal):
 
     def feed(self):
         
-        self.health_level += 10
+        self.health_level += 1
         self.happiness_level += 10
         print(f"{self.name} Tiger was fed.")
 
