@@ -11,15 +11,15 @@ def Champion():
     return "Champion!"
 
 @app.route("/say/Flask")
-def Hi(name):
+def Hi():
     return "Hi Flask!"
 
-@app.route("/say/Michael/")
-def go(x=4):
-    return "Hi Michael!"+x
+@app.route("/say/Michael/<name>")
+def go(name):
+    return "Hi Michael!" +name
 
 @app.route("/say/John")
-def up(sayjohn):
+def up():
     return "Hi John!"
 
 @app.route ("/repeat/<int:num>/<word>")
