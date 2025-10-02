@@ -1,0 +1,41 @@
+main {
+    margin: auto;
+    border: 2px solid black;
+    height: 500px;
+    width: 50%;
+    text-align: center;
+}
+
+div {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+select,
+input {
+    width: 150px;
+}
+
+/* .div-4 {
+
+    
+} */
+
+
+textarea {
+    width: 450px;
+    height: 100px;
+    
+    margin-top: 10px;
+}
+
+button {
+    position: relative;
+    left: 25%;
+    top: 20px;
+    width: 120px;
+    height: 30px;
+    background-color: #76a5af;
+    color: white;
+}

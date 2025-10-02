@@ -11,10 +11,8 @@ def index():
 @app.route('/result',methods=['POST'])
 def result():
     name=request.form.get("first_name")
-    
     location=request.form.get("Dojo_Location")
     language=request.form.get("favorite_language")
-    
     comment=request.form.get("comment")
     
     return render_template('result.html',name=name,location=location,language=language,comment=comment)

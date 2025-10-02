@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo survey </title>
+    {% load static %}
+    <link rel="stylesheet" href='{% static "result.css"%}'>
+</head>
+
+<body>
+    <h1>Submitted Info</h1>
+    <main>
+        <div class="left">
+            <h2>Name</h2>
+            <h2>Dojo Location</h2>
+            <h2>Favorite Language</h2>
+            <h2>Comment</h2>
+        </div>
+        <div class="rigth">
+            <h2>{{request.session.first_name}}</h2>
+            <h2>{{request.session.Dojo_Location}}</h2>
+            <h2>{{request.session.favorite_language}}</h2>
+            <h2>{{request.session.comment}}</h2>
+        </div>
+    </main>
+    <a href="/">
+    <button>Go Back</button>
+    </a>
+</body>
+</html>
