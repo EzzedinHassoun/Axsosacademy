@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Counter</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+
+</head>
+
+<body>
+    <form action="/" method="POST">
+        {% csrf_token %}
+        <div class="box">
+            <form action="/">
+                {% csrf_token %}
+                <h1>Counter</h1>
+                <h2>{{x}} Times</h2>
+                <button onclick="window.location='/destroy_session'">Go Back</button>
+        </div>
+    </form>
+
+
+</body>
+
+</html>
