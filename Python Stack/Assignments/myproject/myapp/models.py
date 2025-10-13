@@ -1,5 +1,4 @@
 from django.db import models
-from django.db import models
 
 class Dojo(models.Model):
     name=models.CharField(max_length=250)
@@ -8,7 +7,7 @@ class Dojo(models.Model):
     desc=models.TextField(default="")
     created_at=models.DateTimeField(auto_now_add=True)
     updated_at=models.DateTimeField(auto_now=True)
-
+    batata =models.TextField()
     def __str__(self):
         return f"{self.name} {self.city} {self.state}"
     
@@ -24,3 +23,6 @@ class Ninja(models.Model):
 
     def __str__(self):
         return f"{self.first_name} {self.last_name}"
+
+def alldogo():
+    return Dojo.objects.all()

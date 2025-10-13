@@ -1,16 +1,16 @@
 from django.shortcuts import render ,redirect
-from .models import Dojo,Ninja
+from .models import *
 
 def index(request):
     data={
-        "Dojo":Dojo.objects.all(),
+        "Dojo":alldogo(),
         "Ninja":Ninja.objects.all()
     }
     return render (request,'index.html',data)
 
 def add_dojo(request):
     data={
-        "Dojos":Dojo.objects.all()
+        "Dojos":alldogo(),
     }
     if request.method=='POST':
         name=request.POST.get('name')
