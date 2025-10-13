@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <section class="container">
+        <h1>Registration</h1>
+
+        <form action="/register" method="POST">
+            {% csrf_token %}
+
+            <div class="form-group">
+                <label for="first_name">First Name</label>
+                <input type="text" class="form-control" id="first_name" name="first_name">
+            </div>
+
+            {% if errors.first_name %}
+            {% for error in errors.first_name %}
+            <div>
+                <small class="text-danger">{{ error }}</small>
+            </div>
+            {% endfor %}
+            {% endif %}
+
+            <div class="form-group">
+                <label for="last_name">Last Name</label>
+                <input type="text" class="form-control" id="last_name" name="last_name">
+            </div>
+
+            {% if errors.last_name %}
+            {% for error in errors.last_name %}
+            <div>
+                <small class="text-danger">{{ error }}</small>
+            </div>
+            {% endfor %}
+            {% endif %}
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="email">
+            </div>
+
+            {% if errors.email %}
+            {% for error in errors.email %}
+            <div>
+                <small class="text-danger">{{ error }}</small>
+            </div>
+            {% endfor %}
+            {% endif %}
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" name="password">
+            </div>
+
+            {% if errors.password %}
+            <small class="text-danger">{{ errors.password }}</small>
+            {% endif %}
+
+            <div class="form-group">
+                <label for="confirm_password">Confirm Password</label>
+                <input type="password" class="form-control" id="confirm_password" name="confirm_password">
+            </div>
+
+            {% if errors.confirm_password %}
+            <small class="text-danger">{{ errors.confirm_password }}</small>
+            {% endif %}
+
+
+
+            <div class="text-center">
+                <button type="submit" class="btn btn-info">Register</button>
+            </div>
+
+        </form>
+    </section>
+
+
+    <section class="container">
+        <h1>Login</h1>
+        <form action="/login" method="POST">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="email">
+            </div>
+
+            {% if errors.login_email %}
+            <small class="text-danger">{{ errors.login_email }}</small>
+            {% endif %}
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" name="password">
+            </div>
+
+            {% if errors.login_password %}
+            <small class="text-danger">{{ errors.login_password }}</small>
+            {% endif %}
+
+            <div class="text-center">
+                <button type="submit" class="btn btn-info">Login</button>
+            </div>
+
+        </form>
+    </section>
+
+</body>
+
+</html>
