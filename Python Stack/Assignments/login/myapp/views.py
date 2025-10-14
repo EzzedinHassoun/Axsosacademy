@@ -1,7 +1,6 @@
 from django.shortcuts import render, redirect
-from . import models
+from . import models,bcrypt
 
-import bcrypt
 
 def index(request):
     return render(request,"index.html")

@@ -1,6 +1,5 @@
 from django.db import models
 import re
-import bcrypt
 
 class UserManager(models.Manager):
     def basic_validator(self, postData):
@@ -68,3 +67,4 @@ def get_user(email):
     
 def is_exists(email):
     return User.objects.filter(email=email).exists()
+
