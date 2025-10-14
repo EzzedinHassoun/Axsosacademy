@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete a Course</title>
+</head>
+<body style="display: flex; flex-direction: column; align-items: center;">
+    <h1 style="margin-bottom: 20px;">Are you sure you want to delete the following course?</h1>
+
+    <p>Name: {{info.name}}</p>
+    <p>Description:{{info.description}}</p>
+
+    <form action="/courses/delete/{{info.id}}" method="post">
+        {%csrf_token%}
+        <button type="button" style="background-color:green; color:white;" onclick="window.history.back();" >No</button>
+        <button type="submit" style="background-color:red; color:white;">Yes! I want to delete this</button>
+    </form>
+</body>
+</html>

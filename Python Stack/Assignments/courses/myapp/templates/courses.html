@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Add a new course</title>
+</head>
+
+<body style="display: flex; flex-direction: column; align-items: center;">
+    <h1>Add a new course</h1>
+    <form action="/add_course" method="post">
+        {%csrf_token%}
+        <label>Name:</label><br>
+        <input type="text" name="name"><br>
+        <br>
+
+        <label>Description:</label><br>
+        <textarea name="description" rows="4" cols="50"></textarea><br>
+
+        <button type="submit" style="background-color:green; color:white; padding: 5px 10px;">Add</button>
+    </form>
+
+    <h2>Courses</h2>
+        <table >
+            
+            <tr>
+                <th class="table" style="padding: 10px;">Course Name</th>
+                <th class="table" style="padding: 10px;">Description</th>
+                <th class="table" style="padding: 10px;">Date Added</th>
+                <th class="table" style="padding: 10px;">Actions</th>
+            </tr>
+            {%for course in courses%}
+            <tr>
+                <td class="table" style="padding: 10px;">{{course.name}}</td>
+                <td class="table" style="padding: 10px;">{{course.description}}</td>
+                <td class="table" style="padding: 10px;">{{course.created_at}}</td>
+                <td class="table" style="padding: 10px;"><button type="submit" style="background-color:red; color:white;" onclick="window.location.href='/destroy/{{course.id}}';">Remove</button>
+                </td>
+            </tr>
+            {%endfor%}
+        </table>
+</body>
+
+</html>
